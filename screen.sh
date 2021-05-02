@@ -5,11 +5,9 @@ if [ ! -d '.screen' ];then
 	mkdir '.screen'
 fi
 cd '.screen'
-declare -i time=0
 annee=`date +%Y`
 mois=`date +%m`
 jour=`date +%d`
-temp=`date`
 if [ ! -d $annee ];then
 	mkdir $annee
 fi
