@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=sh "~/.screen/screen.sh"
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name=Apoleon33
-Comment= noice it work
