@@ -3,25 +3,15 @@ declare -i var=0
 annee=`date +%Y`
 mois=`date +%m`
 jour=`date +%d`
+jour2=`date --date="-1 day" +%d`
+jour3=`date --date="-2 day" +%d`
+jour4=`date --date="-3 day" +%d`
+jour5=`date --date="-4 day" +%d`
+jour6=`date --date="-5 day" +%d`
+jour7=`date --date="-6 day" +%d`
 if [ $jour -lt 6]
 then
-	if [ $jour -eq 1];then
-		reste= $(( mois +2 ))
-		if [ $reste -eq 0 ]
-		then
-			jour_2=$(( jour -1 ))
-			jour_3=$(( jour_2 -1))
-			jour_4=$(( jour_3 -1))
-			jour_5=$(( jour_4 -1))
-			jour_6=$(( jour_5 -1))
-		fi
-	fi		
-fi
-jour_2=$(( jour -1))
-jour_3=$(( jour_2 -1))
-jour_4=$(( jour_3 -1))
-jour_5=$(( jour_4 -1))
-jour_6=$(( jour_5 -1))
+	$mois2=
 cd
 cd .screen/$annee/$mois/
 while read line;do

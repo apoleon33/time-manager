@@ -12,7 +12,7 @@ mv link.sh ~/.screen
 cd
 while read line
 do
-	if [ $line =="alias mytime='cd | bash .screen/link.sh' "]
+	if [ $line =="alias mytime='bash $HOME/.screen/link.sh' "]
 	then
 		 
 echo "alias mytime='cd | bash .screen/link.sh' " >> '.zshrc'
